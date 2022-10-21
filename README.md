@@ -6,7 +6,7 @@
 2022.04 ~ 2022.06
 
 ### 프로젝트 내용
-Google Dialogflow를 이용하며 스트리밍 기능을 추가해 이전 대화형 AI 김구보다 더 빠르고 정확하게 커뮤니케이션이 가능한 프로젝트입니다.
+Google Dialogflow를 이용하며 스트리밍 기능을 추가해 이전 대화형 AI 김구보다 더 빠르고 정확하게 커뮤니케이션이 가능한 프로젝트입니다.\
 현재 덕수궁에서 전시되고 있습니다.\
 <img width="40%" src="https://user-images.githubusercontent.com/90584581/197148019-b361aece-da6c-49f7-8872-4851f89203cf.png"/>  <img width="17%" src="https://user-images.githubusercontent.com/90584581/197148038-080f5a5f-27cb-47c8-af24-f15941264b1f.jpg"/>  <img width="13%" src="https://user-images.githubusercontent.com/90584581/197148028-b82ec493-b1a3-4b1f-9a63-b85b793a1828.png"/>
 
