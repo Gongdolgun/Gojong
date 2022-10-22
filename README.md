@@ -2,18 +2,22 @@
 
 # Gojong
 
-### 프로젝트 기간
+### [프로젝트 기간]
 2022.04 ~ 2022.06
 
-### 프로젝트 내용
+### [기술 스택]
+<img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=Unity&logoColor=white"/>  <img src="https://img.shields.io/badge/C Sharp-239120?style=flat-square&logo=C Sharp&logoColor=white"/>  <img src="https://img.shields.io/badge/Google Dialogflow-FF9800?style=flat-square&logo=Dialogflow&logoColor=white"/>  <img src="https://img.shields.io/badge/Synology-B5B5B6?style=flat-square&logo=Synology&logoColor=white"/>
+
+### [프로젝트 내용]
+리얼센스 카메라를 이용하여 키오스크 앞에 사람이 있는지 확인한 후 사람이 인식되면 시작되고 사라지면 다시 처음으로 돌아갑니다.\
 Google Dialogflow와 소켓 통신을 기반으로 스트리밍 기능을 추가해 이전 대화형 AI 김구보다 더 빠르고 정확하게 커뮤니케이션이 가능한 프로젝트입니다.\
 현재 덕수궁에서 전시되고 있습니다.\
 <img width="40%" src="https://user-images.githubusercontent.com/90584581/197148019-b361aece-da6c-49f7-8872-4851f89203cf.png"/>  <img width="17%" src="https://user-images.githubusercontent.com/90584581/197148038-080f5a5f-27cb-47c8-af24-f15941264b1f.jpg"/>  <img width="13%" src="https://user-images.githubusercontent.com/90584581/197148028-b82ec493-b1a3-4b1f-9a63-b85b793a1828.png"/>
 
-### 프로젝트 투입 인원
+### [프로젝트 투입 인원]
 개발자 2, 디자이너 1
 
-### 나의 역할
+### [나의 역할]
 - Google Dialogflow API 연동
 - 코드 결합 및 수정
 - 서버/클라이언트 소켓 통신
@@ -23,10 +27,10 @@ Google Dialogflow와 소켓 통신을 기반으로 스트리밍 기능을 추가
 - 프로젝트 유지보수
 - 클라이언트와 지속적으로 면담 및 요구사항 수정
 
-### 핵심 코드
+### [핵심 코드]
 서버와 클라이언트의 소켓통신으로 주고받은 정보를 기준으로 프로젝트가 진행됩니다.
 
-서버와 연결되는 클라이언트 코드
+#### 서버와 연결되는 클라이언트 코드
 
         ```
         public void ConnectedToServer()
