@@ -8,6 +8,9 @@
 ### [기술 스택]
 <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=Unity&logoColor=white"/>  <img src="https://img.shields.io/badge/C Sharp-239120?style=flat-square&logo=C Sharp&logoColor=white"/>  <img src="https://img.shields.io/badge/Google Dialogflow-FF9800?style=flat-square&logo=Dialogflow&logoColor=white"/>  <img src="https://img.shields.io/badge/Synology-B5B5B6?style=flat-square&logo=Synology&logoColor=white"/>
 
+### [아키텍처]
+<img width="40%" src="Gojong_Architecture](https://user-images.githubusercontent.com/90584581/197330885-e2bb8cd0-f5ab-443d-9800-fd7a8476f2d7.png"/>
+
 ### [프로젝트 내용]
 리얼센스 카메라를 이용하여 키오스크 앞에 사람이 있는지 확인한 후 사람이 인식되면 시작되고 사라지면 다시 처음으로 돌아갑니다.\
 Google Dialogflow와 소켓 통신을 기반으로 스트리밍 기능을 추가해 이전 대화형 AI 김구보다 더 빠르고 정확하게 커뮤니케이션이 가능한 프로젝트입니다.\
