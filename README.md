@@ -33,6 +33,32 @@ Google Dialogflow와 소켓 통신을 기반으로 스트리밍 기능을 추가
 ### [핵심 코드]
 서버와 클라이언트의 소켓통신으로 주고받은 정보를 기준으로 프로젝트가 진행됩니다.
 
+#### 서버 생성 코드
+
+        ```
+        public void ServerCreate()
+        {
+            clients = new List<ServerClient>();
+            disconnectList = new List<ServerClient>();
+
+            try
+            {
+                int port = PortInput.text == "" ? 7777 : int.Parse(PortInput.text);
+                server = new TcpListener(IPAddress.Any, port);
+                server.Start();
+
+                StartListening();
+                serverStarted = true;
+                //Chat.instance.ShowMessage($"서버가 {port}에서 시작되었습니다.");
+            }
+            catch (Exception e)
+            {
+                Chat.instance.ShowMessage($"Socket error: {e.Message}");
+            }
+        }
+        ```
+
+
 #### 서버와 연결되는 클라이언트 코드
 
         ```
@@ -57,7 +83,10 @@ Google Dialogflow와 소켓 통신을 기반으로 스트리밍 기능을 추가
             }
         }
         ```
-받아온 응답을 기준으로 애니메이션과 오디오 재생하는 코드
+        
+#### 서버에서 받아온 응답을 기준으로 애니메이션과 오디오 재생하는 코드
+
+
 
         ```
         public void ShowMessage(string data)
@@ -71,11 +100,12 @@ Google Dialogflow와 소켓 통신을 기반으로 스트리밍 기능을 추가
                 Debug.Log(dataNum);
                 ChatText.text += ChatText.text == "" ? data : "\n" + data;
             }
-
-            if(dataNum == 1000) // 사람 없을 때
+            // 사람 없을 때
+            if(dataNum == 1000)
                 state = 1000;
-
-            else if(dataNum == 2000) // 사람 있을 때
+                
+            // 사람 있을 때
+            else if(dataNum == 2000) 
                 state = 2000;
 
             if(state == 1000)
@@ -85,6 +115,7 @@ Google Dialogflow와 소켓 통신을 기반으로 스트리밍 기능을 추가
             {
                 if (!df2.isAnimation) 
                 { 
+                    // 받아온 dataNum을 통해서 애니메이션과 오디오 플레이
                     df2.playAnimation(dataNum);                
                 }
             }
